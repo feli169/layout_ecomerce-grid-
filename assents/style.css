@@ -1,0 +1,96 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+
+.nav{
+    grid-area: navbar;
+    text-align: center;
+    background-color: rgb(41, 62, 116);
+    color: white;
+    padding: 20px;
+}
+
+.aside{
+    grid-area: aside_bar;
+    background-color: rgb(237, 237, 233);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main{
+    grid-area: main;
+    background-color: rgb(237, 237, 233);
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    row-gap: 30px;
+    column-gap: 10px;
+    padding-top: 20px;
+}
+
+.footer{
+    grid-area: footer;
+    text-align: center;
+    padding: 20px;
+}
+
+.container{
+    height: 100vh;
+    display: grid;
+    grid-template-areas: 
+        'navbar navbar'
+        'aside_bar main'
+        'footer footer';
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 2fr 17fr;
+}
+
+h3{
+    padding-bottom: 20px;
+}
+
+
+ul{
+    list-style-type: none;
+}
+
+.item{
+    display: flex;
+}
+
+li.item .cant{
+    padding-left: 8px;
+    padding-bottom: 10px;
+}
+
+li.itema .cant{
+    padding-bottom: 10px;
+}
+
+.cant{
+    color: grey;
+}
+
+.car{
+    text-align: center;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+.car img{
+    width: 100%;
+    height: 200px;
+}
+
+.product{
+    font-size: 20px;
+}
+
+.buy{
+    color: white;
+    background-color: rgb(41, 62, 116);
+}
